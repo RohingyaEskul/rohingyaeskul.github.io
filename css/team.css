@@ -39,7 +39,8 @@ a:hover {
 }
 
 img {
-    max-width: 100%;
+    width: 20px;
+    /* min-width: 20px; */
     height: auto;
 }
 
@@ -317,7 +318,9 @@ input:-webkit-autofill:focus {
 }
 
 .in-container {
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
     width: 40%;
 }
 
@@ -350,7 +353,7 @@ input:-webkit-autofill:focus {
 **************/
 
 .cofounder-row, 
-.volunteer-row {
+.team-row {
     display: inline-flex;
     width: 100%;
     margin: 20px 0 10px;
