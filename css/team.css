@@ -306,6 +306,9 @@ input:-webkit-autofill:focus {
     margin: 0px;
 }
 
+#Heroes-title-row {
+    margin: 0px;
+}
 
 /*******
  Photos
@@ -347,6 +350,34 @@ input:-webkit-autofill:focus {
     font-size: 15px;
     margin: 3px;
 }
+/**************
+Heroes Avatars
+**************/
+
+.heroes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heroes-container > div > h3 {
+    color: #2A3C13;
+    font-size: 1em;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroes-container > div > img{
+    width: 100%;
+    height: auto;
+    padding: 1.5em 0.5em 0.3em 0;
+}
+
 
 /**************
  Row Alignment
