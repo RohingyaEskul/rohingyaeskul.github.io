@@ -103,7 +103,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 20px 0 40px;
 }
 
 .social-menu {
@@ -136,6 +136,132 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**********
+ Navigator
+**********/
+
+.mainmenu-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #2A3C13;
+}
+
+.overlay,
+.overlay a,
+.mainmenu-area a {
+    color: #ffffff;
+}
+
+.mainmenu-area .logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: inherit;
+    margin-top: 8px;
+    padding-left: 0;
+}
+
+.mainmenu-area .logo h2 {
+    margin-bottom: 0;
+}
+
+.mainmenu-area #primary-menu > ul > li > a {
+    /*background: none;*/
+    padding: 30px 15px;
+    position: relative;
+    border-top: 3px solid transparent;
+    text-align: center;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mainmenu-area #primary-menu > ul > li > a:hover:before,
+.mainmenu-area #primary-menu > ul > li.active > a:before {
+    opacity: 1;
+    top: 0;
+}
+
+.mainmenu-area #primary-menu ul li.active a,
+.mainmenu-area #primary-menu ul li a:hover {
+    border-top: 3px solid #ffffff;
+}
+
+.mainmenu-area.affix {
+    background-color: #2A3C13;
+    border-bottom: 3px solid #ffffff;
+}
+
+/*******
+ Header
+*******/
+.page-title {
+    margin-bottom: 20px;
+    background: no-repeat center center;
+    background-color: #2A3C13;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+}
+
+/* styles the background image */
+.title-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    /* dark green layer of opacity over the image */
+    background-color: #2A3C13;
+    opacity: .5
+}
+
+.title-header {
+    display: flex;
+    justify-content: center;
+    padding: 150px 0 75px;
+    color: #ffffff;
+}
+
+.title-header h1 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.page-title h1:after {
+    content: "\e675";
+    font-family: 'themify';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
 }
 
 /**
