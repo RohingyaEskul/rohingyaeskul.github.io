@@ -14,7 +14,7 @@ a {
     outline: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    color: #333333;  /*dark gray*/
+    color: #333333;
 }
 
 input:focus,
@@ -23,7 +23,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: none;
-    color: #000000;  /*black*/
+    color: #000000;
 }
 
 img {
@@ -51,7 +51,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     /*line-height: 1.8;*/
-    color: #515656;  /*light gray*/
+    color: #515656;
 }
 
 
@@ -123,18 +123,18 @@ input:-webkit-autofill:focus {
     height: 36px;
     text-align: center;
     line-height: 2.5em;
-    background-color: #AEC33D; /*vivid yellow*/
-    color: #A6893C; /*light brown*/
+    background-color: #BDD788;
+    color: #DE9B0D;
     border-radius: 100px;
-    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1); /*black*/
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     font-size: 15px;
 }
 
 .social-menu li a:hover {
-    background-color: #AEC33D; /*vivid yellow*/
+    background-color: #BDD788;
     color: #ffffff;
-    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1); /*black*/
+    -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -143,11 +143,11 @@ input:-webkit-autofill:focus {
 **/
 
 .white-bg {
-    background-color: #ffffff; /*white*/
+    background-color: #ffffff;
 }
 
 .green-bg {
-    background-color: rgba(99, 130, 42, .125); /*middle green*/
+    background-color: rgba(99, 145, 39, .125);
 }
 
 /**
@@ -195,7 +195,7 @@ input:-webkit-autofill:focus {
 .overlay,
 .overlay a,
 .mainmenu-area a {
-    color: #ffffff; /*white*/
+    color: #ffffff;
 }
 
 .mainmenu-area .logo {
@@ -229,7 +229,7 @@ input:-webkit-autofill:focus {
     height: 0;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
-    border-top: 10px solid #ffffff; /*white*/
+    border-top: 10px solid #ffffff;
     opacity: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -243,12 +243,12 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area #primary-menu ul li.active a,
 .mainmenu-area #primary-menu ul li a:hover {
-    border-top: 3px solid #ffffff; /*white*/
+    border-top: 3px solid #ffffff;
 }
 
 .mainmenu-area.affix {
-    background-color: #2A3C13; /*dark green*/
-    border-bottom: 3px solid #ffffff; /*white*/
+    background-color: #0D3207; 
+    border-bottom: 3px solid #ffffff;
 }
 
 /***
@@ -307,24 +307,24 @@ input:-webkit-autofill:focus {
 **********/
 
 #opening-paragraph {
-    color: #2A3C13; /*dark green*/
+    color: #0D3207;
     font-weight: 900;
     text-align: center;
 }
 
 #community {
-    background-color: #D9E0AA; /*light yellow*/
-    border: 5px solid #2A3C13; /*dark green*/
+    background-color: #F1FAD6; 
+    border: 5px solid #0D3207;
     padding: 20px;
 }
 
 .nav-link {
-    background-color: rgba(99, 130, 42, .5); /*#63822A middle green*/
+    background-color: rgba(99, 145, 39, .5);
     margin: 3px;
 }
 
 .green-bg {
-    background-color: #D9E0AA; /*light yellow*/
+    background-color: #F1FAD6;
 }
 
 .who-row {
@@ -336,32 +336,32 @@ input:-webkit-autofill:focus {
 #who-title {
     color: white;
     text-shadow:
-        -1px -1px 0 #2A3C13, /*dark green*/
-        1px -1px 0 #2A3C13, /*dark green*/
-        -1px 1px 0 #2A3C13, /*dark green*/
-        1px 1px 0 #2A3C13; /*dark green*/
+        -1px -1px 0 #0D3207,
+        1px -1px 0 #0D3207, 
+        -1px 1px 0 #0D3207,
+        1px 1px 0 #0D3207;
 }
 
 .who-content {
-    background-color: #ffffff; /*white*/
-    border: 5px solid #2A3C13; /*dark green*/
+    background-color: #ffffff;
+    border: 5px solid #0D3207;
     border-radius: 5px;
     padding: 20px;
 }
 
 .box {
-    -webkit-box-shadow: 0 0 0 0 #ffffff; /*white*/
+    -webkit-box-shadow: 0 0 0 0 #ffffff;
     box-shadow: 0 0 0 0 #ffffff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 5px;
-    border: 5px solid #2A3C13; /*dark green*/
-    background-color: #ffffff; /*white*/
+    border: 5px solid #0D3207;
+    background-color: #ffffff;
     width: 80%;
 }
 
 .box:hover {
-    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1); /*black*/
+    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
 }
 
@@ -378,11 +378,11 @@ input:-webkit-autofill:focus {
 
 #accordion .panel {
     background: none;
-    border: 5px solid #2A3C13; /*dark green*/
+    border: 5px solid #0D3207; 
     margin: 10px;
     padding: 30px 0 30px 80px;
     position: relative;
-    background-color: #D9E0AA; /*light yellow*/
+    background-color: #F1FAD6;
 }
 
 #accordion .panel h4 {
@@ -407,7 +407,7 @@ input:-webkit-autofill:focus {
     top: 25px;
     width: 36px;
     height: 36px;
-    background: #35451D; /*earthy green*/
+    background: #0D3207; /*earthy green*/
     border-radius: 50%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -417,7 +417,7 @@ input:-webkit-autofill:focus {
 #accordion .panel .panel-title a span:after {
     width: 10px;
     height: 1px;
-    background-color: #ffffff; /*white*/
+    background-color: #ffffff;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%);
