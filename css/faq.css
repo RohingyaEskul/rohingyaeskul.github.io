@@ -311,11 +311,11 @@ input:-webkit-autofill:focus {
 
 #accordion .panel {
     background: none;
-    border: 5px solid #0D3207;
+    border: 0px solid #0D3207;
     margin: 10px;
     padding: 30px 0 30px 80px;
     position: relative;
-    background-color: #F1FAA2;
+    background-color: #D5E3AB;
 }
 
 #accordion .panel h4 {
@@ -350,7 +350,7 @@ input:-webkit-autofill:focus {
 #accordion .panel .panel-title a span:after {
     width: 10px;
     height: 1px;
-    background-color: #ffffff; /*white*/
+    background-color: #ffffff;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%);

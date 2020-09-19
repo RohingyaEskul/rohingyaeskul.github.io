@@ -257,7 +257,7 @@ input:-webkit-autofill:focus {
 
 .single-team {
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 0px;
     overflow: hidden;
     color: #515656;
     text-align: center;
@@ -314,7 +314,7 @@ input:-webkit-autofill:focus {
 
 #community {
     background-color: #F1FAD6; 
-    border: 5px solid #0D3207;
+    border: 0px solid #0D3207;
     padding: 20px;
 }
 
@@ -344,8 +344,8 @@ input:-webkit-autofill:focus {
 
 .who-content {
     background-color: #ffffff;
-    border: 5px solid #0D3207;
-    border-radius: 5px;
+    border: 0px solid #0D3207;
+    border-radius: 0px;
     padding: 20px;
 }
 
@@ -354,8 +354,8 @@ input:-webkit-autofill:focus {
     box-shadow: 0 0 0 0 #ffffff;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 5px;
-    border: 5px solid #0D3207;
+    border-radius: 0px;
+    border: 0px solid #0D3207;
     background-color: #ffffff;
     width: 80%;
 }
@@ -369,68 +369,3 @@ input:-webkit-autofill:focus {
     padding: 20px;
     font-weight: 500;
 }
-
-
-/***********************
- Accordion - FAQ
- Parts made by Colorlib
-***********************/
-
-#accordion .panel {
-    background: none;
-    border: 5px solid #0D3207; 
-    margin: 10px;
-    padding: 30px 0 30px 80px;
-    position: relative;
-    background-color: #F1FAD6;
-}
-
-#accordion .panel h4 {
-    font-size: 1.25em;
-}
-
-.panel-collapse p{
-    font-size: 1em; 
-    padding: 10px 10px 0 0;
-}
-
-#accordion .panel .panel-collapse {
-    padding-left: 0 30px 0 60px;
-}
-
-#accordion .panel .panel-title a span:after,
-#accordion .panel .panel-title a span:before,
-#accordion .panel .panel-title a span {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    width: 36px;
-    height: 36px;
-    background: #0D3207; /*earthy green*/
-    border-radius: 50%;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-#accordion .panel .panel-title a span:before,
-#accordion .panel .panel-title a span:after {
-    width: 10px;
-    height: 1px;
-    background-color: #ffffff;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%)
-}
-
-#accordion .panel .panel-title a span:before {
-    -webkit-transform: translate(-50%) rotate(90deg);
-    transform: translate(-50%) rotate(90deg)
-}
-
-#accordion .panel .panel-title a[aria-expanded="true"] span:before {
-    -webkit-transform: translate(-50%) rotate(0deg);
-    transform: translate(-50%) rotate(0deg)
-}
-
