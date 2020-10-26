@@ -103,7 +103,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 80px 0;
+    padding: 20px 0 40px;
 }
 
 .social-menu {
@@ -123,8 +123,8 @@ input:-webkit-autofill:focus {
     height: 36px;
     text-align: center;
     line-height: 2.5em;
-    background-color: #BDD788;
-    color: #DE9B0D;
+    background-color: #DE9B0D;
+    color: #A6893C; /*light brown*/
     border-radius: 100px;
     -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
@@ -132,8 +132,8 @@ input:-webkit-autofill:focus {
 }
 
 .social-menu li a:hover {
-    background-color: #BDD788;
-    color: #ffffff;
+    background-color: #DE9B0D;
+    color: #ffffff; /*white*/
     -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -178,9 +178,9 @@ input:-webkit-autofill:focus {
     font-size: 14px;
 }
 
-/**
-*Mainmenu-area
-**/
+/**********
+ Navigator
+**********/
 
 .mainmenu-area {
     position: fixed;
@@ -190,12 +190,13 @@ input:-webkit-autofill:focus {
     z-index: 9999999;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    background-color: #0D3207;
 }
 
 .overlay,
 .overlay a,
 .mainmenu-area a {
-    color: #ffffff;
+    color: #ffffff; /*white*/
 }
 
 .mainmenu-area .logo {
@@ -247,125 +248,122 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: #0D3207; 
+    background-color: #0D3207;
     border-bottom: 3px solid #ffffff;
 }
 
-/***
-*Team-Section
-***/
-
-.single-team {
-    background-color: #ffffff;
-    border-radius: 0px;
-    overflow: hidden;
-    color: #515656;
-    text-align: center;
-    position: relative;
-    -webkit-box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 5px 30px -10px rgba(0, 0, 0, 0.3);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: 0.3s;
-    transition: 0.3s
-}
-
-.single-team:hover {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px)
-}
-
-.single-team {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.single-team .team-photo {
-    margin-bottom: 20px;
-    padding-top: 20px;
-    overflow: hidden;
-}
-
-.team-photo {
-    max-height: 200px;
-}
-
-.single-team .team-photo img {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
+/*******
+ Header
+*******/
 .page-title {
-    text-align: center;
+    margin-bottom: 20px;
+    background: no-repeat center center;
+    background-color: #0D3207; 
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
 }
 
-/**********
- Main Page
-**********/
+/* styles the background image */
+.title-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 
-#opening-paragraph {
-    color: #0D3207;
-    font-weight: 900;
-    text-align: center;
+    /* dark green layer of opacity over the image */
+    background-color: #0D3207; 
+    opacity: .5
 }
 
-#community {
-    background-color: #F1FAD6; 
-    border: 0px solid #0D3207;
-    padding: 20px;
-}
-
-.nav-link {
-    background-color: rgba(99, 145, 39, .5);
-    margin: 3px;
-}
-
-.green-bg {
-    background-color: #F1FAD6;
-}
-
-.who-row {
+.title-header {
     display: flex;
-    align-items: center;
-    margin: 10px 0 10px;
+    justify-content: center;
+    padding: 150px 0 75px;
+    color: #ffffff;
 }
 
-#who-title {
-    color: white;
-    text-shadow:
-        -1px -1px 0 #0D3207,
-        1px -1px 0 #0D3207, 
-        -1px 1px 0 #0D3207,
-        1px 1px 0 #0D3207;
+.title-header h1 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.who-content {
-    background-color: #ffffff;
+.page-title h1:after {
+    content: "\e675";
+    font-family: 'themify';
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+}
+
+/***********************
+ Accordion - FAQ
+ Parts made by Colorlib
+***********************/
+
+#accordion .panel {
+    background: none;
     border: 0px solid #0D3207;
-    border-radius: 0px;
-    padding: 20px;
+    margin: 10px;
+    padding: 30px 0 30px 80px;
+    position: relative;
+    background-color: #D5E3AB;
 }
 
-.box {
-    -webkit-box-shadow: 0 0 0 0 #ffffff;
-    box-shadow: 0 0 0 0 #ffffff;
+#accordion .panel h4 {
+    font-size: 1.25em;
+}
+
+.panel-collapse p{
+    font-size: 1em; 
+    padding: 10px 10px 0 0;
+}
+
+#accordion .panel .panel-collapse {
+    padding-left: 0 30px 0 60px;
+}
+
+#accordion .panel .panel-title a span:after,
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    width: 36px;
+    height: 36px;
+    background: #0D3207;
+    border-radius: 50%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    border-radius: 0px;
-    border: 0px solid #0D3207;
+}
+
+#accordion .panel .panel-title a span:before,
+#accordion .panel .panel-title a span:after {
+    width: 10px;
+    height: 1px;
     background-color: #ffffff;
-    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
 }
 
-.box:hover {
-    -webkit-box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+#accordion .panel .panel-title a span:before {
+    -webkit-transform: translate(-50%) rotate(90deg);
+    transform: translate(-50%) rotate(90deg)
 }
 
-#connect {
-    padding: 20px;
-    font-weight: 500;
+#accordion .panel .panel-title a[aria-expanded="true"] span:before {
+    -webkit-transform: translate(-50%) rotate(0deg);
+    transform: translate(-50%) rotate(0deg)
 }
+
