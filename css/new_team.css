@@ -116,7 +116,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 10px 0 10px;
+    padding: 0px 0px 0px 0px;
 }
 
 .social-menu {
@@ -292,14 +292,39 @@ input:-webkit-autofill:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: 400;
 }
 
 .title-content {
     width: 60%;
 }
 
-#cofounders-title-row {
-    margin: 0px;
+.row {
+    margin: 0px 5px 0px 5px;
+}
+
+.col-xs-12 {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.description-container {
+    background-color: #bdd788;
+    color: #0d3207;
+    font-weight: 700;
+}
+
+.directors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img {
+    width:250px;
+    height:auto;
+    border-radius:50%;
+    border: 5px solid #0d3207;
 }
 
 #volunteers-title-row {
