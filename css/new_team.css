@@ -230,7 +230,7 @@ input:-webkit-autofill:focus {
  Header
 *******/
 .page-title {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     background: no-repeat center center;
     background-color: #0D3207;
     background-attachment: scroll;
@@ -312,9 +312,16 @@ input:-webkit-autofill:focus {
     background-color: #bdd788;
     color: #0d3207;
     font-weight: 700;
+    padding: 10px;
 }
 
 .directors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -325,15 +332,58 @@ img {
     height:auto;
     border-radius:50%;
     border: 5px solid #0d3207;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
 }
 
-.personbox {
+.person-box {
+    max-width: 400px;
+    margin: auto;
+    
+    padding: 15px;
+}
+
+.person-box h3 {
+    margin:20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.person-box p {
+    font-size: 18px;
+}
+
+.member-box {
     max-width: 300px;
     margin: auto;
-    text-align: center;
+    
+    padding: 0px;
 }
 
+.member-box h3 {
+    margin:0px;
+    text-align: center;
+    font-size: 18px;
+}
 
+.person-box p {
+    font-size: 16px;
+}
+
+.member-box img {
+    width:200px;
+    height:auto;
+    border-radius:50%;
+    border: 5px solid #0d3207;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 5px;
+}
+
+.member-row  {
+    padding: 0px;
+}
 
 #volunteers-title-row {
     margin: 0px;
