@@ -39,8 +39,7 @@ a:hover {
 }
 
 img {
-    width: 20px;
-    /* min-width: 20px; */
+    max-width: 100%;
     height: auto;
 }
 
@@ -63,7 +62,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 15px;
-/*    line-height: 1.8;*/
+    /*line-height: 1.8;*/
     color: #515656;
 }
 
@@ -116,7 +115,7 @@ input:-webkit-autofill:focus {
 }
 
 .section-padding {
-    padding: 10px 0 10px;
+    padding: 20px 0 40px;
 }
 
 .social-menu {
@@ -222,7 +221,7 @@ input:-webkit-autofill:focus {
 }
 
 .mainmenu-area.affix {
-    background-color: #0D3207; 
+    background-color: #0D3207;
     border-bottom: 3px solid #ffffff;
 }
 
@@ -278,7 +277,6 @@ input:-webkit-autofill:focus {
     font-size: 14px;
 }
 
-
 /*******
  Titles
 *******/
@@ -298,97 +296,23 @@ input:-webkit-autofill:focus {
     width: 60%;
 }
 
-#cofounders-title-row {
-    margin: 0px;
+#intheworks-title-row {
+    padding: 100px 0 20px;
 }
 
-#volunteers-title-row {
-    margin: 0px;
-}
-
-#Heroes-title-row {
-    margin: 0px;
-}
-
-/*******
- Photos
-*******/
-
-.profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.in-container {
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    width: 40%;
-}
-
-.linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.person {
-    text-align: center;
-    background-color: #0D3207;
-    border: 5px solid #0D3207; 
-    color: white;
-    border-radius: 5px;
-}
-
-.person > img {
-    width: 100%;
-    height: auto;
-}
-
-.person > h3 {
-    font-size: 15px;
-    margin: 3px;
-}
-/**************
-Heroes Avatars
-**************/
-
-.heroes-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.heroes-container > div > h3 {
-    color: #0D3207;
-    font-size: 1em;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.heroes-container > div > img{
-    width: 100%;
-    height: auto;
-    padding: 1.5em 0.5em 0.3em 0;
+#current-title-row {
+    padding: 0 0 30px;
 }
 
 
-/**************
- Row Alignment
-**************/
+/********
+ Content
+********/
+.mission-statement span{
+    color: rgba(99, 145, 39, 1)
 
-.cofounder-row, 
-.team-row {
-    display: inline-flex;
-    width: 100%;
-    margin: 20px 0 10px;
 }
+
 
 
 /********
@@ -465,76 +389,3 @@ div.background {
     margin-top: 2em;
 }
 
-/********
-Footnote
-********/
-.footnote {
-    display: absolute;
-}
-
-#footer-background {
-    width: 100%;
-}
-
-div.background {
-    position: relative;
-
-}
-.center-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -36%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.center-container h3 {
-    font-size: 140%;
-    color: white;
-    font-style: bold;
-    position: relative;
-    margin-bottom: 1em;
-}
-
-.icons-row-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.icons-row-container a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footnote-icon-img {
-    width: 40px;
-    margin: 0 5px;
-}
-
-@media only screen and (max-width: 750px){
-    .footnote-icon-img {
-        width: 30px;
-    }
-}
-
-
-@media only screen and (max-width: 400px){
-    .footnote-icon-img {
-        width: 17px;
-        margin: 0 2px;
-    }
-}
-
-.center-container h4 {
-    font-size: 80%;
-    color: white;
-    font-weight: lighter;
-    position: relative;
-    margin-top: 2em;
-}
