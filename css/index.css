@@ -242,7 +242,7 @@ input:-webkit-autofill:focus {
     position: absolute;
     top: 0;
     left: 0;
-    height: 70%;
+    height: 100%;
     width: 100%;
 
     /* dark green layer of opacity over the image */
@@ -303,6 +303,36 @@ input:-webkit-autofill:focus {
 #current-title-row {
     padding: 0 0 30px;
 }
+
+
+/********
+ Content
+********/
+#eskul-def{
+    margin-top: 10;
+    margin-left: 10;
+
+}
+.row-eskul{
+    padding: 0 20%;
+}
+#eskul-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+#ethos.png {
+    width: 80%;
+    height: auto;
+
+}
+
+.mission-statement span{
+    color: rgba(99, 145, 39, 1)
+
+}
+
 
 
 /********
